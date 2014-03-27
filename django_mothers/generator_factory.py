@@ -7,6 +7,7 @@ MAPPING = [
     (fields.CharField, generators.string),
     (fields.BooleanField, generators.boolean),
     (fields.IntegerField, generators.integer),
+    (fields.DateField, generators.date),
 ]
 
 def generate(field):
