@@ -1,15 +1,14 @@
 import random
 import string
 
+from generators import (
+    comma_separated_int
+    )
+
 from django.conf import settings
 if not settings.configured:
     settings.configure(DEBUG=True)
 from django.db.models import fields
-
-
-def randomstring(size):
-    chars = string.ascii_uppercase + string.digits
-    return ''.join(random.choice(chars) for _ in range(size))
 
 
 class Mother(object):
@@ -29,21 +28,23 @@ class Mother(object):
                 continue
 
             if isinstance(field, fields.CommaSeparatedIntegerField):
-                v = [str(random.randint(-2147483648, 2147483647)) for _ in range(random.randrange(0,5))]
-                setattr(self.obj, field.name, ','.join(v))
+                v = generators.comma_separated_int(field)
+                setattr(self.obj, field.name, v)
                 continue
 
             if isinstance(field, fields.CharField):
-                length = field.max_length or 10
-                setattr(self.obj, field.name, randomstring(length))
+                v = generators.string(field)
+                setattr(self.obj, field.name, v)
                 continue
 
             if isinstance(field, fields.BooleanField):
-                setattr(self.obj, field.name, random.choice((True, False)))
+                v = generators.boolean(field)
+                setattr(self.obj, field.name, v)
                 continue
 
             if isinstance(field, fields.IntegerField):
-                setattr(self.obj, field.name, random.randint(-2147483648, 2147483647))
+                v = generators.integer(field)
+                setattr(self.obj, field.name, v)
                 continue
 
     def __getattr__(self, attr):
