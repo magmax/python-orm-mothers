@@ -1,9 +1,7 @@
 import random
 import string
 
-from generators import (
-    comma_separated_int
-    )
+import generator_factory
 
 from django.conf import settings
 if not settings.configured:
@@ -27,25 +25,8 @@ class Mother(object):
                 setattr(self.obj, field.name, value)
                 continue
 
-            if isinstance(field, fields.CommaSeparatedIntegerField):
-                v = generators.comma_separated_int(field)
-                setattr(self.obj, field.name, v)
-                continue
-
-            if isinstance(field, fields.CharField):
-                v = generators.string(field)
-                setattr(self.obj, field.name, v)
-                continue
-
-            if isinstance(field, fields.BooleanField):
-                v = generators.boolean(field)
-                setattr(self.obj, field.name, v)
-                continue
-
-            if isinstance(field, fields.IntegerField):
-                v = generators.integer(field)
-                setattr(self.obj, field.name, v)
-                continue
+            v = generator_factory.generate(field)
+            setattr(self.obj, field.name, v)
 
     def __getattr__(self, attr):
         return getattr(self.obj, attr)
