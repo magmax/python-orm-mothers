@@ -6,7 +6,6 @@ import generator_factory
 from django.conf import settings
 if not settings.configured:
     settings.configure(DEBUG=True)
-from django.db.models import fields
 
 
 class Mother(object):
@@ -16,8 +15,6 @@ class Mother(object):
         self.obj = model()
 
         for field in model._meta.fields:
-            print field
-
             if field.name in kwargs:
                 value = kwargs[field.name]
                 if callable(value):

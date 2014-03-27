@@ -3,7 +3,7 @@ import string as string_mod
 
 
 def comma_separated_int(field):
-    v = [str(random.randint(-2147483648, 2147483647))
+    v = [str(integer(field))
          for _ in range(random.randrange(0,5))]
     return ','.join(v)
 
