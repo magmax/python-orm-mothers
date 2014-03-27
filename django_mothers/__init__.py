@@ -22,12 +22,24 @@ class Mother(object):
             print field
 
             if field.name in kwargs:
-                setattr(self.obj, field.name, kwargs[field.name])
+                value = kwargs[field.name]
+                if callable(value):
+                    value = value(field.name)
+                setattr(self.obj, field.name, value)
+                continue
+
+            if isinstance(field, fields.CommaSeparatedIntegerField):
+                v = [str(random.randint(-2147483648, 2147483647)) for _ in range(random.randrange(0,5))]
+                setattr(self.obj, field.name, ','.join(v))
                 continue
 
             if isinstance(field, fields.CharField):
                 length = field.max_length or 10
                 setattr(self.obj, field.name, randomstring(length))
+                continue
+
+            if isinstance(field, fields.BooleanField):
+                setattr(self.obj, field.name, random.choice((True, False)))
                 continue
 
             if isinstance(field, fields.IntegerField):

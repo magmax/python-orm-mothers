@@ -1,8 +1,5 @@
 import unittest
 
-from django.conf import settings
-if not settings.configured:
-    settings.configure(DEBUG=True)
 from django.db import models
 
 from django_mothers import Mother
@@ -26,3 +23,11 @@ class TestIntegerFields(unittest.TestCase):
         mother = Mother(Example, field_1=3)
 
         self.assertEquals(3, mother.field_1)
+
+    def test_create_using_generator(self):
+        def generator(field_name):
+            return 9
+
+        mother = Mother(Example, field_1=generator)
+
+        self.assertEqual(9, mother.field_1)

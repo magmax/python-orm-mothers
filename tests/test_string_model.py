@@ -1,11 +1,4 @@
 import unittest
-
-
-import unittest
-
-from django.conf import settings
-if not settings.configured:
-    settings.configure(DEBUG=True)
 from django.db import models
 
 from django_mothers import Mother
@@ -22,3 +15,8 @@ class TestCharFields(unittest.TestCase):
 
         self.assertIsInstance(mother.field_1, str)
         self.assertIsInstance(mother.field_2, str)
+
+    def test_use_fixed_data(self):
+        mother = Mother(StringExample, field_2='fulanito')
+
+        self.assertEqual(mother.field_2, 'fulanito')
