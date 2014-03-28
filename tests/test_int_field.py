@@ -1,4 +1,8 @@
-import unittest
+try:
+    import unittest2 as unittest
+except ImportError:
+    import unittest
+
 from django.db import models
 
 from django_mothers import Mother
