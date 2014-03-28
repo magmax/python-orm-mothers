@@ -1,9 +1,9 @@
 Create fake objects automatically from Django models. Useful for testing.
 
-| **Current status** | In development.                           |
-| :------------------------------------------------------------- |
-| **Tests status**   | [![Travis status][travis status]][travis] |
-| :------------------------------------------------------------- |
+Current status | Test status
+---------------|------------------------------------------
+In development | [![Travis status][travis status]][travis]
+
 
 
 # Description
@@ -59,37 +59,39 @@ LGPL3
 
 Here you have a table with current support:
 
-| AutoField                          | no   |
-| BigIntegerField                    | YES  |
-| BinaryField                        | no   |
-| BooleanField                       | YES  |
-| CharField                          | YES  |
-| CommaSeparatedIntegerField         | YES  |
-| DateField                          | YES  |
-| DateTimeField                      | YES  |
-| DecimalField                       | no   |
-| EmailField                         | no   |
-| FileField                          | no   |
-| FilePathField                      | no   |
-| FloatField                         | no   |
-| ImageField                         | no   |
-| IntegerField                       | YES  |
-| IPAddressField                     | no   |
-| GenericIPAddressField              | no   |
-| NullBooleanField                   | no   |
-| PositiveIntegerField               | no   |
-| PositiveSmallIntegerField          | no   |
-| SlugField                          | no   |
-| SmallIntegerField                  | no   |
-| TextField                          | no   |
-| TimeField                          | no   |
-| URLField                           | no   |
-| :---------------------------------------- |
-| Foreign Key                        | no   |
-| Many to Many                       | no   |
-| One to One                         | no   |
-| :---------------------------------------- |
-| Cyclic relationships               | no   |
+| Field name                         | support |
+|------------------------------------|---------|
+| AutoField                          | no      |
+| BigIntegerField                    | YES     |
+| BinaryField                        | no      |
+| BooleanField                       | YES     |
+| CharField                          | YES     |
+| CommaSeparatedIntegerField         | YES     |
+| DateField                          | YES     |
+| DateTimeField                      | YES     |
+| DecimalField                       | no      |
+| EmailField                         | no      |
+| FileField                          | no      |
+| FilePathField                      | no      |
+| FloatField                         | no      |
+| ImageField                         | no      |
+| IntegerField                       | YES     |
+| IPAddressField                     | no      |
+| GenericIPAddressField              | no      |
+| NullBooleanField                   | no      |
+| PositiveIntegerField               | no      |
+| PositiveSmallIntegerField          | no      |
+| SlugField                          | no      |
+| SmallIntegerField                  | no      |
+| TextField                          | no      |
+| TimeField                          | no      |
+| URLField                           | no      |
+|------------------------------------|---------|
+| Foreign Key                        | no      |
+| Many to Many                       | no      |
+| One to One                         | no      |
+|------------------------------------|---------|
+| Cyclic relationships               | no      |
 
 
 
