@@ -15,5 +15,5 @@ MAPPING = [
 def generate(field):
     for clazz, generator in MAPPING:
         if isinstance(field, clazz):
-            print clazz
+            print(clazz)  ## FIXME
             return generator(field)
