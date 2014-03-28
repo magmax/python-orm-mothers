@@ -21,18 +21,24 @@ Here you have some simple and working examples.
 
 Let's work with the model:
 
-    from django.db import models
-    class Person(models.Model):
-        name = models.CharField(max_length=40)
-        age  = models.IntegerField()
+```python
+from django.db import models
+class Person(models.Model):
+    name = models.CharField(max_length=40)
+    age  = models.IntegerField()
+
 
 You can create a random `Person`:
 
-    random_person = Mother(Person)
+```python
+random_person = Mother(Person)
+```
 
 Or you can create a random `Person` with an specific age:
 
-    person = Mother(Person, age=18)
+```python
+person = Mother(Person, age=18)
+```
 
 The rest of fields will be randomized.
 
@@ -42,11 +48,13 @@ It's simple.
 
 You can use a callable method as value if you want. It will receive the field as argument.
 
-    import random
-    def random_age(field):
-        return random.randint(14,80)
+```python
+import random
+def random_age(field):
+    return random.randint(14,80)
 
-    person = Mother(Person, age=random_age)
+person = Mother(Person, age=random_age)
+```
 
 This allow you to assign the values you may need, instead of using the default ones.
 
