@@ -2,7 +2,7 @@ from django.conf import settings
 if not settings.configured:
     settings.configure(DEBUG=True)
 
-import generator_factory
+from . import generator_factory
 
 
 class Mother(object):

@@ -1,5 +1,5 @@
 from django.db.models import fields
-import generators
+from . import generators
 
 
 MAPPING = [
