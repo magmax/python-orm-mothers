@@ -62,20 +62,20 @@ Here you have a table with current support:
 | Field name                         | support |
 |------------------------------------|---------|
 | AutoField                          | no      |
-| BigIntegerField                    | YES     |
+| BigIntegerField                    | **YES** |
 | BinaryField                        | no      |
-| BooleanField                       | YES     |
-| CharField                          | YES     |
-| CommaSeparatedIntegerField         | YES     |
-| DateField                          | YES     |
-| DateTimeField                      | YES     |
+| BooleanField                       | **YES** |
+| CharField                          | **YES** |
+| CommaSeparatedIntegerField         | **YES** |
+| DateField                          | **YES** |
+| DateTimeField                      | **YES** |
 | DecimalField                       | no      |
 | EmailField                         | no      |
 | FileField                          | no      |
 | FilePathField                      | no      |
 | FloatField                         | no      |
 | ImageField                         | no      |
-| IntegerField                       | YES     |
+| IntegerField                       | **YES** |
 | IPAddressField                     | no      |
 | GenericIPAddressField              | no      |
 | NullBooleanField                   | no      |
@@ -86,11 +86,11 @@ Here you have a table with current support:
 | TextField                          | no      |
 | TimeField                          | no      |
 | URLField                           | no      |
-|------------------------------------|---------|
+| -- | |
 | Foreign Key                        | no      |
 | Many to Many                       | no      |
 | One to One                         | no      |
-|------------------------------------|---------|
+| -- | |
 | Cyclic relationships               | no      |
 
 
