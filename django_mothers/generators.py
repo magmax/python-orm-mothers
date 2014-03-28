@@ -26,5 +26,13 @@ def integer(field):
     return random.randint(-2147483648, 2147483647)
 
 
+def datetime(field):
+    return datetime_mod.datetime.fromtimestamp(integer(field))
+
+
 def date(field):
-    return datetime_mod.date.fromtimestamp(integer(field))
+    return datetime(field).date()
+
+
+def time(field):
+    return datetime(field).time()
