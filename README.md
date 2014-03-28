@@ -1,10 +1,9 @@
 Create fake objects automatically from Django models. Useful for testing.
 
------------------------------------------------------------------------------------------------|
-| **Current status** | In development.                                                         |
-|----------------------------------------------------------------------------------------------|
-| **Tests status**   | ![Travis status](https://travis-ci.org/magmax/django-mothers.svg)       |
-|----------------------------------------------------------------------------------------------|
+| **Current status** | In development.                           |
+| :------------------------------------------------------------- |
+| **Tests status**   | [![Travis status][travis status]][travis] |
+| :------------------------------------------------------------- |
 
 
 # Description
@@ -60,7 +59,6 @@ LGPL3
 
 Here you have a table with current support:
 
-|-------------------------------------------|
 | AutoField                          | no   |
 | BigIntegerField                    | YES  |
 | BinaryField                        | no   |
@@ -86,13 +84,15 @@ Here you have a table with current support:
 | TextField                          | no   |
 | TimeField                          | no   |
 | URLField                           | no   |
-|--------------------------------------------
+| :---------------------------------------- |
 | Foreign Key                        | no   |
 | Many to Many                       | no   |
 | One to One                         | no   |
-|--------------------------------------------
+| :---------------------------------------- |
 | Cyclic relationships               | no   |
 
 
 
 [Django]: https://docs.djangoproject.com
+[Travis]: https://travis-ci.org/magmax/django-mothers
+[travis status]:https://travis-ci.org/magmax/django-mothers.svg
