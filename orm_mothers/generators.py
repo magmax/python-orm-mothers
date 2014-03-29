@@ -2,9 +2,10 @@ import random
 import string as string_mod
 import datetime as datetime_mod
 
+
 def comma_separated_int(field):
     v = [str(integer(field))
-         for _ in range(random.randrange(0,5))]
+         for _ in range(random.randrange(0, 5))]
     return ','.join(v)
 
 

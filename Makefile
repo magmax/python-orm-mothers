@@ -18,4 +18,4 @@ pep8:
 	@pep8 --statistics ${MODULES}
 
 flakes:
-	@pyflakes invoice
+	@pyflakes ${MODULES}

@@ -12,8 +12,9 @@ MAPPING = [
     (fields.TimeField, generators.time),
 ]
 
+
 def generate(field):
     for clazz, generator in MAPPING:
         if isinstance(field, clazz):
-            print(clazz)  ## FIXME
+            print(clazz)  # FIXME
             return generator(field)
