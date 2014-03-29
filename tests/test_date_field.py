@@ -7,7 +7,7 @@ else:
 import datetime
 from django.db import models
 
-from django_mothers import Mother
+from orm_mothers import DjangoMother as Mother
 
 
 class DateExample(models.Model):

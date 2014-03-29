@@ -6,7 +6,7 @@ else:
 
 from django.db import models
 
-from django_mothers import Mother
+from orm_mothers import DjangoMother as Mother
 
 
 class StringExample(models.Model):

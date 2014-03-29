@@ -5,7 +5,7 @@ if not settings.configured:
 from . import generator_factory
 
 
-class Mother(object):
+class DjangoMother(object):
     def __init__(self, model, **kwargs):
         self.model = model
 
