@@ -23,6 +23,10 @@ def boolean(field):
     return random.choice((True, False))
 
 
+def boolean_or_none(field):
+    return random.choice((True, False, None))
+
+
 def integer(field):
     return random.randint(-2147483648, 2147483647)
 

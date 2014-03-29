@@ -5,6 +5,7 @@ from . import generators
 MAPPING = [
     (fields.CommaSeparatedIntegerField, generators.comma_separated_int),
     (fields.CharField, generators.string),
+    (fields.NullBooleanField, generators.boolean_or_none),
     (fields.BooleanField, generators.boolean),
     (fields.PositiveSmallIntegerField, generators.positive_small_integer),
     (fields.SmallIntegerField, generators.small_integer),

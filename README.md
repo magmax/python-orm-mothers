@@ -108,7 +108,7 @@ Here you have a table with current support:
 | IntegerField                       | **YES** |
 | IPAddressField                     | no      |
 | GenericIPAddressField              | no      |
-| NullBooleanField                   | no      |
+| NullBooleanField                   | **YES** |
 | PositiveIntegerField               | **YES** |
 | PositiveSmallIntegerField          | **YES** |
 | SlugField                          | no      |
