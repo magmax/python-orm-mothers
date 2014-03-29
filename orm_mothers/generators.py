@@ -53,3 +53,9 @@ def date(field):
 
 def time(field):
     return datetime(field).time()
+
+
+def auto_integer(field, data={}):
+    v = data.get(field, 0) + 1
+    data[field] = v
+    return v

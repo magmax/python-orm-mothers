@@ -91,7 +91,7 @@ Here you have a table with current support:
 
 | Field name                         | support |
 |------------------------------------|---------|
-| AutoField                          | no      |
+| AutoField                          | **YES** |
 | BigIntegerField                    | **YES** |
 | BinaryField                        | no      |
 | BooleanField                       | **YES** |

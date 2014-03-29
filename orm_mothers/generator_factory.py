@@ -3,6 +3,7 @@ from . import generators
 
 
 MAPPING = [
+    (fields.AutoField, generators.auto_integer),
     (fields.CommaSeparatedIntegerField, generators.comma_separated_int),
     (fields.CharField, generators.string),
     (fields.NullBooleanField, generators.boolean_or_none),
