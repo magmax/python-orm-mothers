@@ -12,7 +12,7 @@ install:
 script:
   - make pep8
   - if [[ $TRAVIS_PYTHON_VERSION != '2.6' ]]; then make flakes; fi
-  - make test
+  - make xcoverage
 
 after_success:
   - make coveralls
