@@ -80,7 +80,7 @@ This allow you to assign the values you may need, instead of using the default o
 
 # License
 
-[![LGPL 3][LGPL3 image]][LGPL3]
+[![LGPL 3][LGPL image]][LGPL3]
 
 
 # Current support
