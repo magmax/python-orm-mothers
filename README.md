@@ -16,7 +16,7 @@ Python-orm-mothers helps you to test your ORM-based applications. It is a replac
 
 The main idea is to be able to create in-memory objects, instead of static JSON files. This way you can decide to persist them or to use them without using a database.
 
-Django-mothers allows you to create a new object based on the model. This framework will randomize all the fields (and maybe will create other related objects) in order to create a complete story about your object. It allows you to set some data to your desires too.
+Python-orm-mothers allows you to create a new object based on the model. This framework will randomize all the fields (and maybe will create other related objects) in order to create a complete story about your object. It allows you to set some data to your desires too.
 
 In the future, it should support [Django], [SQLAlchemy] or any other Python [ORM].
 
@@ -134,7 +134,7 @@ Not started yet
 [SQLAlchemy]: http://www.sqlalchemy.org/
 [ORM]: http://en.wikipedia.org/wiki/Object-relational_mapping "Object-Relational Mapping"
 [Travis]: https://travis-ci.org/magmax/python-orm-mothers
-[travis image]:https://travis-ci.org/magmax/django-mothers.svg
+[travis image]:https://travis-ci.org/magmax/python-orm-mothers.svg
 [Coveralls]: https://coveralls.io/r/magmax/python-orm-mothers
 [coverage image]: https://coveralls.io/repos/magmax/python-orm-mothers/badge.png
 [LGPL image]: https://www.gnu.org/graphics/lgplv3-147x51.png
