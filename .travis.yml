@@ -6,13 +6,14 @@ python:
   - "3.3"
 
 install:
-  - pip install . --use-mirrors
   - pip install -r requirements.txt python-coveralls
   - if [[ $TRAVIS_PYTHON_VERSION == 2* ]]; then pip install unittest2; fi
 
 script:
   - make pep8
   - if [[ $TRAVIS_PYTHON_VERSION != '2.6' ]]; then make flakes; fi
+
+after_success:
   - make coveralls
 
 notifications:
