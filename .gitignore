@@ -5,3 +5,4 @@ venv
 \.venv
 *.pyc
 .coverage
+coverage.xml

@@ -26,6 +26,9 @@ def boolean(field):
 def integer(field):
     return random.randint(-2147483648, 2147483647)
 
+def small_integer(field):
+    return random.randint(-32768, 32767)
+
 
 def datetime(field):
     return datetime_mod.datetime.fromtimestamp(integer(field))
