@@ -1,9 +1,9 @@
-MODULES=invoice
+MODULES=orm_mothers
 IGNORE=**/tests/*
 
 all: pep8 flakes test
 
-test:: run_tests report
+test:: run_tests
 
 analysis:: pep8 flakes
 
@@ -12,10 +12,7 @@ coveralls::
 
 run_tests:
 	@echo Running Tests...
-	@nosetests --with-coverage --cover-package=orm_mothers tests/
-
-report:
-	@coverage report
+	@nosetests --with-coverage --cover-package=${MODULES} tests/
 
 pep8:
 	@pep8 --statistics ${MODULES}
