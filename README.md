@@ -7,7 +7,7 @@ ORM          | Current status
 
 TESTS                                     | COVERAGE
 ------------------------------------------|------------------------------------------------
-[![Travis status][travis image]][Travis]  | [![Coverage Status](coverage image)][Coveralls]
+[![Travis status][travis image]][Travis]  | [![Coverage Status][coverage image]][Coveralls]
 
 
 # Description
