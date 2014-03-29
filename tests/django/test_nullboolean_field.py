@@ -19,13 +19,11 @@ class TestNullBooleanFields(unittest.TestCase):
         mother = Mother(NullBooleanExample)
 
         self.assertTrue(
-            mother.field_1 is None
-            or isinstance(mother.field_1, bool),
+            mother.field_1 is None or isinstance(mother.field_1, bool),
             "Expected boolean or None, but %s found" % mother.field_1
         )
         self.assertTrue(
-            mother.field_2 is None
-            or isinstance(mother.field_1, bool),
+            mother.field_2 is None or isinstance(mother.field_2, bool),
             "Expected boolean or None, but %s found" % mother.field_2
         )
 
