@@ -1,6 +1,7 @@
-try:
+import sys
+if sys.version < (3, 0):
     import unittest2 as unittest
-except ImportError:
+else:
     import unittest
 
 import datetime
