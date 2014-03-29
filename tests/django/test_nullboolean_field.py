@@ -18,10 +18,16 @@ class TestNullBooleanFields(unittest.TestCase):
     def test_create_nullboolean_mother(self):
         mother = Mother(NullBooleanExample)
 
-        self.assertTrue(mother.field_1 is None
-                        or isinstance(mother.field_1, bool))
-        self.assertTrue(mother.field_2 is None
-                        or isinstance(mother.field_1, bool))
+        self.assertTrue(
+            mother.field_1 is None
+            or isinstance(mother.field_1, bool),
+            "Expected boolean or None, but %s found" % mother.field_1
+        )
+        self.assertTrue(
+            mother.field_2 is None
+            or isinstance(mother.field_1, bool),
+            "Expected boolean or None, but %s found" % mother.field_2
+        )
 
     def test_create_using_my_own_data(self):
         mother = Mother(NullBooleanExample, field_1=True, field_2=None)
