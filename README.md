@@ -80,7 +80,7 @@ This allow you to assign the values you may need, instead of using the default o
 
 # License
 
-[![LGPL image][LGPL3]][LGPL3]
+[![LGPL 3][LGPL3 image]][LGPL3]
 
 
 # Current support
@@ -133,9 +133,10 @@ Not started yet
 [Django]: https://docs.djangoproject.com
 [SQLAlchemy]: http://www.sqlalchemy.org/
 [ORM]: http://en.wikipedia.org/wiki/Object-relational_mapping "Object-Relational Mapping"
-[Travis]: https://travis-ci.org/magmax/django-mothers
+[Travis]: https://travis-ci.org/magmax/python-orm-mothers
 [travis image]:https://travis-ci.org/magmax/django-mothers.svg
 [LGPL image]: https://www.gnu.org/graphics/lgplv3-147x51.png
 [LGPL3]: https://www.gnu.org/licenses/gpl-3.0.html
 [ObjectMother]: http://martinfowler.com/bliki/ObjectMother.html
 [Object Mother: Easing Test Object Creation in XP]: http://cf.agilealliance.org/articles/system/article/file/910/file.pdf
+[Martin Fowler]: http://martinfowler.com/
