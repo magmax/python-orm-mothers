@@ -9,16 +9,16 @@ from django.db import models
 from orm_mothers import DjangoMother as Mother
 
 
-class PositiveIntegerExample(models.Model):
-    field_1 = models.PositiveIntegerField()
-    field_2 = models.PositiveIntegerField()
+class PositiveSmallIntegerExample(models.Model):
+    field_1 = models.PositiveSmallIntegerField()
+    field_2 = models.PositiveSmallIntegerField()
 
 
-class TestPositiveIntegerFields(unittest.TestCase):
+class TestPositiveSmallIntegerFields(unittest.TestCase):
     def test_create_small_integer_mother(self):
-        mother = Mother(PositiveIntegerExample)
+        mother = Mother(PositiveSmallIntegerExample)
 
         self.assertIsInstance(mother.field_1, int)
         self.assertIsInstance(mother.field_2, int)
         self.assertGreaterEqual(mother.field_1, 0)
-        self.assertLessEqual(mother.field_1, 2147483647)
+        self.assertLessEqual(mother.field_1, 32767)

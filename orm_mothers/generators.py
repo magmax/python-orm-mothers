@@ -35,6 +35,10 @@ def positive_integer(field):
     return random.randint(0, 2147483647)
 
 
+def positive_small_integer(field):
+    return random.randint(0, 32767)
+
+
 def datetime(field):
     return datetime_mod.datetime.fromtimestamp(integer(field))
 

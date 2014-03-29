@@ -110,7 +110,7 @@ Here you have a table with current support:
 | GenericIPAddressField              | no      |
 | NullBooleanField                   | no      |
 | PositiveIntegerField               | **YES** |
-| PositiveSmallIntegerField          | no      |
+| PositiveSmallIntegerField          | **YES** |
 | SlugField                          | no      |
 | SmallIntegerField                  | **YES** |
 | TextField                          | no      |
