@@ -12,7 +12,7 @@ coveralls::
 
 run_tests:
 	@echo Running Tests...
-	@nosetests --with-xcoverage --cover-package=${MODULES} --cover-tests
+	@nosetests -d --exe --with-xcoverage --cover-package=${MODULES} --cover-tests
 
 pep8:
 	@pep8 --statistics ${MODULES}
