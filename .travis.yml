@@ -4,10 +4,18 @@ python:
   - "2.7"
   - "3.2"
   - "3.3"
-# command to install dependencies
+
 install:
-  - "pip install -r requirements.txt"
+  - pip install . --use-mirrors
+  - pip install -r requirements.txt python-coveralls
   - if [[ $TRAVIS_PYTHON_VERSION == 2* ]]; then pip install unittest2; fi
 
-# command to run tests
-script: nosetests
+script:
+  - make pep8
+  - if [[ $TRAVIS_PYTHON_VERSION != '2.6' ]]; then make flakes; fi
+  - make coveralls
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change

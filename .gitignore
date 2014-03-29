@@ -2,5 +2,6 @@
 \#*
 \.\#*
 venv
+\.venv
 *.pyc
 .coverage

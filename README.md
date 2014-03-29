@@ -6,8 +6,8 @@ ORM          | Current status
 [SQLAlchemy] | Not started
 
 TESTS                                     | COVERAGE
-------------------------------------------|----------
-[![Travis status][travis image]][Travis]  |
+------------------------------------------|------------------------------------------------
+[![Travis status][travis image]][Travis]  | [![Coverage Status](coverage image)][Coveralls]
 
 
 # Description
@@ -135,6 +135,8 @@ Not started yet
 [ORM]: http://en.wikipedia.org/wiki/Object-relational_mapping "Object-Relational Mapping"
 [Travis]: https://travis-ci.org/magmax/python-orm-mothers
 [travis image]:https://travis-ci.org/magmax/django-mothers.svg
+[Coveralls]: https://coveralls.io/r/magmax/python-orm-mothers
+[coverage image]: https://coveralls.io/repos/magmax/python-orm-mothers/badge.png
 [LGPL image]: https://www.gnu.org/graphics/lgplv3-147x51.png
 [LGPL3]: https://www.gnu.org/licenses/gpl-3.0.html
 [ObjectMother]: http://martinfowler.com/bliki/ObjectMother.html
