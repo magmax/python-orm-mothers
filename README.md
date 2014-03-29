@@ -109,10 +109,10 @@ Here you have a table with current support:
 | IPAddressField                     | no      |
 | GenericIPAddressField              | no      |
 | NullBooleanField                   | no      |
-| PositiveIntegerField               | no      |
-| PositiveSmallIntegerField          | **YES** |
+| PositiveIntegerField               | **YES** |
+| PositiveSmallIntegerField          | no      |
 | SlugField                          | no      |
-| SmallIntegerField                  | no      |
+| SmallIntegerField                  | **YES** |
 | TextField                          | no      |
 | TimeField                          | no      |
 | URLField                           | no      |

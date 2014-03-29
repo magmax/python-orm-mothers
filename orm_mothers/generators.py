@@ -26,8 +26,13 @@ def boolean(field):
 def integer(field):
     return random.randint(-2147483648, 2147483647)
 
+
 def small_integer(field):
     return random.randint(-32768, 32767)
+
+
+def positive_integer(field):
+    return random.randint(0, 2147483647)
 
 
 def datetime(field):

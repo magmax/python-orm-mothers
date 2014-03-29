@@ -7,6 +7,7 @@ MAPPING = [
     (fields.CharField, generators.string),
     (fields.BooleanField, generators.boolean),
     (fields.SmallIntegerField, generators.small_integer),
+    (fields.PositiveIntegerField, generators.positive_integer),
     (fields.IntegerField, generators.integer),
     (fields.DateTimeField, generators.datetime),
     (fields.DateField, generators.date),
