@@ -1,4 +1,4 @@
 [run]
-source = orm_mothers, tests
+source = orm_mothers
 
 
