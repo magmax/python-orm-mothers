@@ -1,3 +1,8 @@
+#IMPORTANT
+
+I've just discovered [Factory-boy], and I leave the project.
+
+
 Create fake objects automatically from any ORM models. Useful for testing.
 
 ORM          | Current status
@@ -142,3 +147,4 @@ Not started yet
 [ObjectMother]: http://martinfowler.com/bliki/ObjectMother.html
 [Object Mother: Easing Test Object Creation in XP]: http://cf.agilealliance.org/articles/system/article/file/910/file.pdf
 [Martin Fowler]: http://martinfowler.com/
+[Factory-boy]: https://github.com/rbarrois/factory_boy
